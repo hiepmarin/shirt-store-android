@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "191444927565",
+    "firebase_url": "https://phonesstore-b4fc1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "phonesstore-b4fc1",
+    "storage_bucket": "phonesstore-b4fc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191444927565:android:9faa0faeb5273fd58d4804",
+        "android_client_info": {
+          "package_name": "com.ssv.appsalephone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191444927565-93qbifv0g5ev7idb6g3hdjvu13emgb1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ssv.appsalephone",
+            "certificate_hash": "52e7034a649727466137962ffe7d274feb1c3dfc"
+          }
+        },
+        {
+          "client_id": "191444927565-2au6bp64ib3vu9au5582ck5kj0og2v6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaU7P6AGL5AHxnRNBsSD0angNAPAZjU48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191444927565-2au6bp64ib3vu9au5582ck5kj0og2v6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

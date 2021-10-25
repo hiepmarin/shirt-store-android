@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_order_info"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/divider"
+            android:src="@drawable/iphone12xanhla">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_order_info_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/img_order_info"
+            android:text="Iphone 12"
+            android:textSize="10sp"
+            android:textColor="@color/text_color">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_order_info_text_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/img_order_info"
+            android:layout_below="@+id/tv_order_info_name"
+            android:text="Số Lượng:"
+            android:textSize="10sp"
+            android:textColor="@color/text_color">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_order_info_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tv_order_info_text_num"
+            android:layout_below="@+id/tv_order_info_name"
+            android:text="3"
+            android:textSize="10sp"
+            android:textColor="@color/text_color">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_order_info_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/img_order_info"
+            android:layout_below="@+id/tv_order_info_text_num"
+            android:text="20.000.000 VND"
+            android:textSize="10sp"
+            android:textColor="@color/red">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_order_info_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_order_info_name"
+            android:text="Đang Chờ Xác Nhận"
+            android:textSize="10sp"
+            android:textColor="@color/teal_700"
+            android:gravity="right">
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

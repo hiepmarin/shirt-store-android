@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProductFragment"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/top_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/atc_product_search"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_btn"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_edit_text_search"
+                android:drawableRight="@drawable/ic_baseline_search_24"
+                android:hint="  Search..."
+                android:padding="5dp"
+                android:textSize="15sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/atc_product_search"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>
