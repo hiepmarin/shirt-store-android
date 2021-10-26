@@ -136,7 +136,7 @@ public class CartFragment extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void addDataOrder(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("DbOrder");
+        DatabaseReference myRef = database.getReference("Order");
 
         Map<String,Object> map = new HashMap<>();
 

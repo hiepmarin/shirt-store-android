@@ -17,7 +17,7 @@
             android:layout_height="70dp"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/divider"
-            android:src="@drawable/iphone12xanhla">
+            android:src="@drawable/profile_image">
         </ImageView>
 
         <TextView

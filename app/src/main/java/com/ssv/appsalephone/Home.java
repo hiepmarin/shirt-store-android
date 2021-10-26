@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -43,21 +44,28 @@ public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ProgressDialog progress = new ProgressDialog(this);
+        progress.setTitle("Loading");
+        progress.setMessage("Wait while loading...");
+        progress.setCancelable(false);
+        progress.show();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         initItem();
         setDataBotNavHome();
+        progress.dismiss();
     }
 
     private void initItem() {
+
         ahBotNavHome = findViewById(R.id.ahbotnav_home);
         if (listCartProduct == null) {
             listCartProduct = new ArrayList<>();
         }
         fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.content_frame, new ProductFragment());
-
         fragmentTransaction.commit();
+
     }
 
     private void setDataBotNavHome() {
@@ -138,15 +146,13 @@ public class Home extends AppCompatActivity {
                 .build();
         ahBotNavHome.setNotification(notification, 1);
     }
-
-    // Mở Fragment DetailProduct
+    
     public void toDetailProductFragment(Product product) {
         fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.content_frame, new DetailProductFragment(product, listCartProduct));
         fragmentTransaction.commit();
     }
-
-    // Mở Fragment OrderInfo
+    
     public void toOrderInfoFragment(Order orderInfo) {
         fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.content_frame, new OrderInfoFragment(orderInfo));

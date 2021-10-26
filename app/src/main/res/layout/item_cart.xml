@@ -20,7 +20,7 @@
                 android:id="@+id/img_photo_cart"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/iphone12xanhla"></ImageView>
+                android:src="@drawable/profile_image"></ImageView>
 
             <ImageView
                 android:id="@+id/img_remove_cart"

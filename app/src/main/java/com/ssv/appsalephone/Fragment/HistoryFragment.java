@@ -105,7 +105,7 @@ public class HistoryFragment extends Fragment {
         listDetailOrder.clear();
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("DbOrder");
+        DatabaseReference myRef = database.getReference("Order");
 
         myRef.orderByChild("custEmail").equalTo(profile.getEmail())
                 .addValueEventListener(new ValueEventListener() {

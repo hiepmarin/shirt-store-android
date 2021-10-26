@@ -13,13 +13,12 @@
 
         <ImageView
             android:id="@+id/img_photo_product"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/iphone12xanhla"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:layout_alignParentTop="true">
-        </ImageView>
+            android:layout_marginTop="5dp"
+            android:src="@drawable/profile_image"></ImageView>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -32,19 +31,18 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="5dp"
                 android:gravity="center_horizontal"
-                android:text="Iphone 12"
-                android:textSize="10sp"
-                android:textColor="@color/text_color">
-            </TextView>
+                android:text="T-Shirt"
+                android:textColor="@color/text_color"
+                android:textSize="13sp"></TextView>
 
             <TextView
                 android:id="@+id/tv_product_price"
                 android:layout_width="match_parent"
-                android:layout_height="15dp"
+                android:layout_height="18dp"
                 android:gravity="center"
                 android:layout_below="@+id/tv_product_name"
-                android:text="24.990.000"
-                android:textSize="10sp"
+                android:text="1.234.567 VND"
+                android:textSize="13sp"
                 android:textColor="@color/red">
             </TextView>
 

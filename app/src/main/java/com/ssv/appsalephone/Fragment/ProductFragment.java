@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
@@ -65,7 +66,6 @@ public class ProductFragment extends Fragment {
     }
 
     private void setDataProductAdapter(){
-
         GridLayoutManager gridLayoutManager = new GridLayoutManager(home, 2);
         rcvProduct.setLayoutManager(gridLayoutManager);
 
@@ -89,7 +89,7 @@ public class ProductFragment extends Fragment {
 
     private List<Product> getDataProduct(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("DbProduct");
+        DatabaseReference myRef = database.getReference("Products");
 
         List<Product> mListProduct = new ArrayList<>();
 
@@ -108,14 +108,12 @@ public class ProductFragment extends Fragment {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(getActivity(),"Không tải được dữ liệu từ firebase"
+                Toast.makeText(getActivity(),"Can't access data from firebase"
                         +error.toString(),Toast.LENGTH_LONG).show();
                 Log.d("MYTAG","onCancelled"+ error.toString());
             }
         });
         return mListProduct;
     }
-
-    // endregion
 
 }
