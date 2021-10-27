@@ -153,7 +153,7 @@ public class CartFragment extends Fragment {
         }
         map.put("numProduct",num);
         map.put("totalPrice",totalPrice);
-        map.put("status","Pending Accepted");
+        map.put("status","Pending");
 
         String odrKey = myRef.push().getKey();
         myRef.child(odrKey).setValue(map).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -194,7 +194,7 @@ public class CartFragment extends Fragment {
             detailOrder.setUrlImg(product.getUrlImg());
             detailOrder.setNumProduct(product.getNumProduct());
             detailOrder.setSize(product.getSize());
-            detailOrder.setStatus("Pending accepted");
+            detailOrder.setStatus("Pending");
             listDetailOrder.add(detailOrder);
         }
         return listDetailOrder;

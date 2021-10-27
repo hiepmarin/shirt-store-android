@@ -60,6 +60,7 @@ public class HistoryProductAdapter extends RecyclerView.Adapter<HistoryProductAd
             holder.tvHistoryProductPrice.setText(formatPrice.format(detailOrder.getProductPrice()) + "VNĐ");
             holder.tvHistoryProductStatus.setText(detailOrder.getStatus());
             holder.tvHistoryProductOrderNo.setText(detailOrder.getOrderNo().toUpperCase());
+            holder.tvHistoryProductSize.setText(detailOrder.getSize().toUpperCase());
 
             for (Order order : listOrder){
                 if (order.getOrderNo().equals(detailOrder.getOrderNo() ) ){
@@ -102,7 +103,7 @@ public class HistoryProductAdapter extends RecyclerView.Adapter<HistoryProductAd
 
         ImageView imgHistoryProduct;
         TextView tvHistoryProductName,tvHistoryProductNum,tvHistoryProductPrice,tvHistoryProductDate
-                ,tvHistoryProductStatus,tvHistoryProductOrderNo;
+                ,tvHistoryProductStatus,tvHistoryProductOrderNo, tvHistoryProductSize;
 
         public HistoryProductViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -113,6 +114,7 @@ public class HistoryProductAdapter extends RecyclerView.Adapter<HistoryProductAd
             tvHistoryProductDate = itemView.findViewById(R.id.tv_history_product_date);
             tvHistoryProductStatus = itemView.findViewById(R.id.tv_history_product_status);
             tvHistoryProductOrderNo = itemView.findViewById(R.id.tv_history_product_orderNo);
+            tvHistoryProductSize = itemView.findViewById(R.id.tv_history_product_size);
         }
     }
 }

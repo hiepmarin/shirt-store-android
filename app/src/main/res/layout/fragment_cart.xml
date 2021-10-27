@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.CartFragment">
 
     <RelativeLayout
@@ -16,19 +16,17 @@
             android:id="@+id/img_cart_empty"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/emptycart"
-            android:layout_centerHorizontal="true">
-        </ImageView>
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/emptycart"></ImageView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your cart is empty!"
-            android:textSize="20sp"
-            android:textColor="@color/text_color"
             android:layout_below="@+id/img_cart_empty"
-            android:layout_centerHorizontal="true">
-        </TextView>
+            android:layout_centerHorizontal="true"
+            android:text="Your cart is empty!"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"></TextView>
 
     </RelativeLayout>
 
@@ -45,9 +43,8 @@
                 android:id="@+id/rcv_cart_product"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp">
-            </androidx.recyclerview.widget.RecyclerView>
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp" />
 
             <TextView
                 android:id="@+id/tv_cart_total"
@@ -76,9 +73,9 @@
                 android:id="@+id/spacer"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="5dp"
                 android:layout_below="@+id/tv_cart_total"
-                android:background="@color/gray"/>
+                android:layout_marginTop="5dp"
+                android:background="@color/gray" />
 
             <TextView
                 android:id="@+id/info_cust"
@@ -87,9 +84,9 @@
                 android:layout_below="@+id/spacer"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:text="Delivery Information"
                 android:textColor="@color/text_color"
-                android:textSize="20sp"
-                android:text="Delivery Information"/>
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/edt_cart_cust_name"
@@ -143,7 +140,7 @@
                 android:inputType="phone"
                 android:padding="10dp"
                 android:textColor="@color/text_color"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
 
             <Button
                 android:id="@+id/btn_cart_order"
@@ -165,7 +162,6 @@
         </RelativeLayout>
 
     </ScrollView>
-
 
 
 </FrameLayout>

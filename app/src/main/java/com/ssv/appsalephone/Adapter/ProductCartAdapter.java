@@ -1,5 +1,6 @@
 package com.ssv.appsalephone.Adapter;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +43,7 @@ public class ProductCartAdapter extends RecyclerView.Adapter<ProductCartAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ProductCartViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ProductCartViewHolder holder, @SuppressLint("RecyclerView") int position) {
         Product product = listProductCart.get(position);
         if (product == null){
             return;
@@ -51,6 +52,7 @@ public class ProductCartAdapter extends RecyclerView.Adapter<ProductCartAdapter.
             Glide.with(holder.imgPhotoCart.getContext()).load(product.getUrlImg()).into(holder.imgPhotoCart);
             holder.tvNameProductCart.setText(product.getProductName());
             holder.tvPriceProductCart.setText( formatPrice.format(product.getProductPrice())+ " VNĐ");
+            holder.tvSizeProductCart.setText("Size: " + product.getSize().toUpperCase());
 
             int count = product.getNumProduct();
             if(count != 0){
@@ -112,7 +114,7 @@ public class ProductCartAdapter extends RecyclerView.Adapter<ProductCartAdapter.
     public class ProductCartViewHolder extends ViewHolder{
 
         ImageView imgPhotoCart;
-        TextView tvNameProductCart, tvPriceProductCart,tvCountCart ;
+        TextView tvNameProductCart, tvPriceProductCart,tvCountCart, tvSizeProductCart ;
         ImageView imgMinusCart,imgPlusCart,imgRemoveCart;
 
         public ProductCartViewHolder(@NonNull View itemView) {
@@ -125,6 +127,7 @@ public class ProductCartAdapter extends RecyclerView.Adapter<ProductCartAdapter.
             tvCountCart = itemView.findViewById(R.id.tv_count_cart);
             imgPlusCart = itemView.findViewById(R.id.img_plus_cart);
             imgRemoveCart = itemView.findViewById(R.id.img_remove_cart);
+            tvSizeProductCart = itemView.findViewById(R.id.tv_size_product_cart);
         }
     }
 

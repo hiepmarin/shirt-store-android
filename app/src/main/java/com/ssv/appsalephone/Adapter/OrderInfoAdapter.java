@@ -46,6 +46,7 @@ public class OrderInfoAdapter extends RecyclerView.Adapter<OrderInfoAdapter.Orde
             holder.tvOrderInfoNum.setText(String.valueOf(detailOrder.getNumProduct()));
             holder.tvOrderInfoPrice.setText(formatPrice.format(detailOrder.getProductPrice()) + " VNĐ");
             holder.tvOrderInfoStatus.setText(detailOrder.getStatus());
+            holder.tvOrderInfoSize.setText(detailOrder.getSize().toUpperCase());
         }
     }
 
@@ -61,7 +62,7 @@ public class OrderInfoAdapter extends RecyclerView.Adapter<OrderInfoAdapter.Orde
     public class OrderInfoViewHolder extends RecyclerView.ViewHolder{
 
         ImageView imgOrderInfo;
-        TextView tvOrderInfoName,tvOrderInfoNum,tvOrderInfoPrice,tvOrderInfoStatus;
+        TextView tvOrderInfoName,tvOrderInfoNum,tvOrderInfoPrice,tvOrderInfoStatus, tvOrderInfoSize;
 
         public OrderInfoViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -71,6 +72,7 @@ public class OrderInfoAdapter extends RecyclerView.Adapter<OrderInfoAdapter.Orde
             tvOrderInfoNum = itemView.findViewById(R.id.tv_order_info_num);
             tvOrderInfoPrice = itemView.findViewById(R.id.tv_order_info_price);
             tvOrderInfoStatus = itemView.findViewById(R.id.tv_order_info_status);
+            tvOrderInfoSize = itemView.findViewById(R.id.tv_order_info_size);
         }
     }
 }
