@@ -52,25 +52,25 @@
             <TextView
                 android:id="@+id/tv_cart_total"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30sp"
                 android:layout_below="@+id/rcv_cart_product"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="13dp"
                 android:text="Sub Total: "
                 android:textColor="@color/text_color"
-                android:textSize="20sp"/>
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_cart_total_price"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_height="30sp"
                 android:layout_below="@+id/rcv_cart_product"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/tv_cart_total"
                 android:text="10.000.000"
-                android:textSize="20sp"
-                android:textColor="@color/red"/>
+                android:textColor="@color/red"
+                android:textSize="21sp" />
 
             <View
                 android:id="@+id/spacer"
@@ -109,7 +109,7 @@
                 android:hint="Name"
                 android:padding="10dp"
                 android:textColor="@color/text_color"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
 
             <EditText
                 android:id="@+id/edt_cart_cust_address"
@@ -125,7 +125,7 @@
                 android:hint="Address"
                 android:padding="10dp"
                 android:textColor="@color/text_color"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
 
             <EditText
                 android:id="@+id/edt_cart_cust_phone"

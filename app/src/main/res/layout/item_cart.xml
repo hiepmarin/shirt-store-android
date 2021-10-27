@@ -9,43 +9,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="8">
+        android:weightSum="10">
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2">
+            android:layout_weight="2.5">
 
             <ImageView
                 android:id="@+id/img_photo_cart"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/profile_image"></ImageView>
-
-            <ImageView
-                android:id="@+id/img_remove_cart"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_below="@+id/img_photo_cart"
-                android:layout_marginLeft="28dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/ic_baseline_delete_24"></ImageView>
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile_image" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="5">
+            android:layout_marginTop="0dp"
+            android:layout_weight="4.8"
+            android:layout_gravity="center">
 
             <TextView
                 android:id="@+id/tv_name_product_cart"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-                android:text="Iphone 12"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Shirt"
                 android:textColor="@color/text_color"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_price_product_cart"
@@ -53,31 +47,44 @@
                 android:layout_height="30dp"
                 android:layout_below="@+id/tv_name_product_cart"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
-                android:text="20.990.00 VND"
+                android:layout_marginRight="5dp"
+                android:text="10.000.000 VND"
                 android:textColor="@color/red"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_size_product_cart"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_price_product_cart"
+                android:layout_marginRight="5dp"
+                android:text="Size: S"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="92dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="right">
 
             <ImageView
                 android:id="@+id/img_minus_cart"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
                 android:src="@drawable/ic_baseline_remove_24" />
 
             <TextView
                 android:id="@+id/tv_count_cart"
                 android:layout_width="30dp"
                 android:layout_height="40dp"
-                android:layout_below="@+id/img_minus_cart"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/img_minus_cart"
                 android:background="@color/white"
                 android:gravity="center"
                 android:text="1"
@@ -88,10 +95,18 @@
                 android:id="@+id/img_plus_cart"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_below="@+id/tv_count_cart"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tv_count_cart"
                 android:src="@drawable/ic_baseline_add_24" />
 
+            <ImageView
+                android:id="@+id/img_remove_cart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img_plus_cart"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/ic_baseline_delete_24" />
         </RelativeLayout>
 
     </LinearLayout>

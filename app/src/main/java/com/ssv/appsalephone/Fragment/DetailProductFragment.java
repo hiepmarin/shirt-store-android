@@ -80,9 +80,9 @@ public class DetailProductFragment extends Fragment {
             Glide.with(getContext()).load(detailProduct.getUrlImg()).into(imgDetailProductPhoto);
             tvDetailProductDescription.setText(detailProduct.getDescription());
 
-            for (int i = 0;i< listCartProduct.size();i++){
+            for (int i=0; i< listCartProduct.size(); i++){
 
-                if (listCartProduct.get(i).getProductName().equals(detailProduct.getProductName())){
+                if (listCartProduct.get(i).getId().equals(detailProduct.getId())){
                     isAddToCart = true;
                     btnDetailProductBuy.setText("Added");
                     btnDetailProductBuy.setBackgroundResource(R.drawable.custom_button_gray);

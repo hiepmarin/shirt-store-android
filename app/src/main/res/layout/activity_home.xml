@@ -9,14 +9,13 @@
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/ahbotnav_home">
-    </FrameLayout>
+        android:layout_above="@+id/ahbotnav_home"/>
 
     <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
         android:id="@+id/ahbotnav_home"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignParentBottom="true">
-    </com.aurelhubert.ahbottomnavigation.AHBottomNavigation>
+        android:layout_alignParentBottom="true"
+        android:outlineAmbientShadowColor="@color/white"/>
 
 </RelativeLayout>

@@ -2,13 +2,18 @@ package com.ssv.appsalephone;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
@@ -42,18 +47,13 @@ public class Home extends AppCompatActivity {
     FirebaseFirestore fStore;
     String userId;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        ProgressDialog progress = new ProgressDialog(this);
-        progress.setTitle("Loading");
-        progress.setMessage("Wait while loading...");
-        progress.setCancelable(false);
-        progress.show();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         initItem();
         setDataBotNavHome();
-        progress.dismiss();
     }
 
     private void initItem() {
@@ -89,17 +89,17 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_product, R.drawable.ic_baseline_home_24, R.color.teal_200);
-        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_cart, R.drawable.ic_baseline_add_shopping_cart_24, R.color.gray);
-        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_history, R.drawable.ic_baseline_history_24, R.color.yellow);
-        AHBottomNavigationItem item4 = new AHBottomNavigationItem(R.string.tab_profile, R.drawable.ic_menu_profile, R.color.yellow);
+        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_product, R.drawable.ic_baseline_home_24, R.color.teal_700);
+        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_cart, R.drawable.ic_baseline_add_shopping_cart_24, R.color.teal_700);
+        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_history, R.drawable.ic_baseline_history_24, R.color.teal_700);
+        AHBottomNavigationItem item4 = new AHBottomNavigationItem(R.string.tab_profile, R.drawable.ic_menu_profile, R.color.teal_700);
 
         ahBotNavHome.addItem(item1);
         ahBotNavHome.addItem(item2);
         ahBotNavHome.addItem(item3);
         ahBotNavHome.addItem(item4);
 
-        ahBotNavHome.setColored(false);
+        ahBotNavHome.setColored(true);
 
         ahBotNavHome.setDefaultBackgroundColor(getResources().getColor(R.color.white));
 
