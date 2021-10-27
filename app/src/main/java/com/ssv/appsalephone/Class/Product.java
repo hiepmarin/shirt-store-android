@@ -7,6 +7,7 @@ public class Product {
     private String productName;
     private String description;
     private String brand;
+    private String size;
     private int productPrice;
 
     private int numProduct = 1;
@@ -78,4 +79,11 @@ public class Product {
         this.productName = productName;
     }
 
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
 }

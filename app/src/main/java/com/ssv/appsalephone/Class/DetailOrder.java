@@ -11,6 +11,7 @@ public class DetailOrder {
     private String status;
     private int productPrice;
     private int numProduct;
+    private String size;
 
     public DetailOrder(){
     }
@@ -68,5 +69,13 @@ public class DetailOrder {
 
     public void setProductPrice(int productPrice) {
         this.productPrice = productPrice;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
     }
 }

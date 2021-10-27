@@ -19,7 +19,7 @@
                 android:id="@+id/img_history_bg"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:src="@drawable/hitory_search"></ImageView>
+                android:src="@drawable/history_search"/>
 
             <TextView
                 android:id="@+id/tv_history_text"
@@ -29,7 +29,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="Your orders"
                 android:textColor="@color/text_color"
-                android:textSize="15sp"></TextView>
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/edt_history_phone"
@@ -37,40 +37,36 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_history_text"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/custom_edit_text"
                 android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:hint="Nhập Số Điện Thoại Mua Hàng"
-                android:inputType="phone"
+                android:background="@drawable/custom_edit_text"
+                android:drawableLeft="@drawable/shirt"
+                android:drawablePadding="10dp"
                 android:fontFamily="sans-serif-light"
-                android:textSize="15sp"
-                android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
-                android:drawablePadding="10dp">
-            </EditText>
+                android:hint="Type product name to search"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="17sp" />
 
             <Button
                 android:id="@+id/btn_history_search"
                 android:layout_width="100dp"
                 android:layout_height="35dp"
                 android:layout_below="@+id/edt_history_phone"
-                android:layout_marginTop="10dp"
                 android:layout_centerHorizontal="true"
-                android:text="Tìm Kiếm"
-                android:textSize="10sp"
-                android:background="@drawable/custom_button"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button_red"
                 android:backgroundTint="@null"
-                app:backgroundTint="@null">
-            </Button>
+                android:text="Search"
+                android:textSize="14sp"
+                app:backgroundTint="@null"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcv_history_search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btn_history_search"
                 android:layout_marginLeft="10dp"
-                android:layout_below="@+id/btn_history_search">
-
-            </androidx.recyclerview.widget.RecyclerView>
+                android:layout_marginTop="10dp" />
 
         </RelativeLayout>
 

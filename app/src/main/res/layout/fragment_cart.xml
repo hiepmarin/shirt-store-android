@@ -53,13 +53,12 @@
                 android:id="@+id/tv_cart_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
                 android:layout_below="@+id/rcv_cart_product"
-                android:text="Tổng Tiền :"
-                android:textSize="20sp"
-                android:textColor="@color/text_color">
-            </TextView>
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Sub Total: "
+                android:textColor="@color/text_color"
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/tv_cart_total_price"
@@ -69,10 +68,9 @@
                 android:layout_below="@+id/rcv_cart_product"
                 android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@+id/tv_cart_total"
-                android:text="50.000.000"
+                android:text="10.000.000"
                 android:textSize="20sp"
-                android:textColor="@color/red">
-            </TextView>
+                android:textColor="@color/red"/>
 
             <View
                 android:id="@+id/spacer"
@@ -80,20 +78,18 @@
                 android:layout_height="1dp"
                 android:layout_marginTop="5dp"
                 android:layout_below="@+id/tv_cart_total"
-                android:background="@color/gray">
-            </View>
+                android:background="@color/gray"/>
 
             <TextView
                 android:id="@+id/info_cust"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
                 android:layout_below="@+id/spacer"
-                android:text="Thông Tin Khách Hàng :"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
                 android:textColor="@color/text_color"
-                android:textSize="20sp">
-            </TextView>
+                android:textSize="20sp"
+                android:text="Delivery Information"/>
 
             <EditText
                 android:id="@+id/edt_cart_cust_name"
@@ -110,59 +106,61 @@
                 android:drawableLeft="@drawable/ic_baseline_account_box_24"
                 android:drawablePadding="10dp"
                 android:fontFamily="sans-serif-light"
-                android:hint="Họ Tên"
+                android:hint="Name"
                 android:padding="10dp"
                 android:textColor="@color/text_color"
-                android:textSize="17sp"></EditText>
+                android:textSize="17sp"/>
 
             <EditText
                 android:id="@+id/edt_cart_cust_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_cart_cust_name"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_below="@+id/edt_cart_cust_name"
                 android:background="@drawable/custom_edit_text"
-                android:padding="10dp"
-                android:hint="Địa Chỉ"
-                android:fontFamily="sans-serif-light"
-                android:textSize="17sp"
-                android:textColor="@color/text_color"
                 android:drawableLeft="@drawable/ic_baseline_home_work_24"
-                android:drawablePadding="10dp">
-            </EditText>
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Address"
+                android:padding="10dp"
+                android:textColor="@color/text_color"
+                android:textSize="17sp"/>
 
             <EditText
                 android:id="@+id/edt_cart_cust_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_below="@+id/edt_cart_cust_address"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/custom_edit_text"
-                android:padding="10dp"
-                android:inputType="phone"
-                android:hint="Số Điện Thoại"
-                android:fontFamily="sans-serif-light"
-                android:textSize="17sp"
-                android:textColor="@color/text_color"
                 android:drawableLeft="@drawable/ic_baseline_local_phone_24"
-                android:drawablePadding="10dp">
-            </EditText>
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/text_color"
+                android:textSize="17sp"/>
 
             <Button
                 android:id="@+id/btn_cart_order"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_centerHorizontal="true"
                 android:layout_below="@+id/edt_cart_cust_phone"
-                android:text="Đặt Hàng"
-                android:background="@drawable/custom_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button_red"
                 android:backgroundTint="@null"
-                app:backgroundTint="@null">
-            </Button>
+                android:text="Confirm"
+                app:backgroundTint="@null" />
 
         </RelativeLayout>
 

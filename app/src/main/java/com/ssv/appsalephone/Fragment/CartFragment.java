@@ -136,7 +136,7 @@ public class CartFragment extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void addDataOrder(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Order");
+        DatabaseReference myRef = database.getReference("Orders");
 
         Map<String,Object> map = new HashMap<>();
 
@@ -193,6 +193,7 @@ public class CartFragment extends Fragment {
             detailOrder.setProductPrice(product.getProductPrice());
             detailOrder.setUrlImg(product.getUrlImg());
             detailOrder.setNumProduct(product.getNumProduct());
+            detailOrder.setSize(product.getSize());
             detailOrder.setStatus("Pending accepted");
             listDetailOrder.add(detailOrder);
         }

@@ -19,18 +19,17 @@
             android:layout_marginLeft="10dp"
             android:text="Order ID :"
             android:textColor="@color/text_color"
-            android:textSize="10sp"></TextView>
+            android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/tv_history_product_orderNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
             android:layout_toRightOf="@+id/tv_history_product_text_order"
             android:text="12341aaa"
-            android:layout_marginLeft="3dp"
             android:textColor="@color/teal_200"
-            android:textSize="10sp">
-        </TextView>
+            android:textSize="15sp"/>
 
         <View
             android:id="@+id/divider"
@@ -38,17 +37,16 @@
             android:layout_height="1dp"
             android:layout_marginTop="5dp"
             android:layout_below="@+id/tv_history_product_text_order"
-            android:background="@color/divider">
-        </View>
+            android:background="@color/divider"/>
 
         <ImageView
             android:id="@+id/img_history_product"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_below="@+id/divider"
-            android:src="@drawable/profile_image">
-        </ImageView>
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/profile_image" />
 
         <TextView
             android:id="@+id/tv_history_product_name"
@@ -57,21 +55,9 @@
             android:layout_below="@+id/divider"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/img_history_product"
-            android:text="Iphone 12"
+            android:text="Shirt"
             android:textColor="@color/text_color"
-            android:textSize="10sp"></TextView>
-
-        <TextView
-            android:id="@+id/tv_history_product_price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/img_history_product"
-            android:layout_below="@+id/tv_history_product_text_num"
-            android:text="20.000.000 VND"
-            android:textSize="10sp"
-            android:textColor="@color/red">
-        </TextView>
+            android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/tv_history_product_text_num"
@@ -80,36 +66,56 @@
             android:layout_below="@+id/tv_history_product_name"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/img_history_product"
-            android:text="Quantity:"
+            android:text="Quantity: "
             android:textColor="@color/text_color"
-            android:textSize="10sp"></TextView>
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/tv_history_product_num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/tv_history_product_text_num"
             android:layout_below="@+id/tv_history_product_name"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_history_product_text_num"
             android:text="1"
-            android:textSize="10sp"
-            android:textColor="@color/text_color">
-        </TextView>
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_history_product_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_history_product_text_num"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/img_history_product"
+            android:text="Price: "
+            android:textColor="@color/text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_history_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_history_product_text_num"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_history_product_text_price"
+            android:text="10.000.000 VND"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/tv_history_product_status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_toRightOf="@+id/tv_history_product_name"
-            android:layout_below="@+id/divider"
-            android:text="Đang Chờ Xác Nhận"
-            android:textSize="10sp"
+            android:gravity="right"
+            android:text="Pending"
             android:textColor="@color/teal_700"
-            android:gravity="right">
-        </TextView>
+            android:textSize="10sp" />
 
         <TextView
             android:id="@+id/tv_history_product_text"
@@ -120,7 +126,7 @@
             android:layout_toRightOf="@+id/img_history_product"
             android:text="Order date: "
             android:textColor="@color/text_color"
-            android:textSize="10sp"></TextView>
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/tv_history_product_date"
@@ -130,9 +136,8 @@
             android:layout_toRightOf="@+id/tv_history_product_text"
             android:layout_below="@+id/tv_history_product_price"
             android:text="null"
-            android:textSize="10sp"
-            android:textColor="@color/text_color">
-        </TextView>
+            android:textSize="15sp"
+            android:textColor="@color/text_color"/>
 
     </RelativeLayout>
 

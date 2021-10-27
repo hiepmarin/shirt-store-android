@@ -18,7 +18,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/profile_image"></ImageView>
+            android:src="@drawable/profile_image"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                 android:gravity="center_horizontal"
                 android:text="T-Shirt"
                 android:textColor="@color/text_color"
-                android:textSize="13sp"></TextView>
+                android:textSize="13sp"/>
 
             <TextView
                 android:id="@+id/tv_product_price"
@@ -43,8 +43,7 @@
                 android:layout_below="@+id/tv_product_name"
                 android:text="1.234.567 VND"
                 android:textSize="13sp"
-                android:textColor="@color/red">
-            </TextView>
+                android:textColor="@color/red"/>
 
         </RelativeLayout>
 

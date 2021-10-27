@@ -38,15 +38,15 @@ public class ProductSearchAdapter extends ArrayAdapter<Product> {
             convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_search,parent,false);
         }
 
-//        ImageView imgSearch = convertView.findViewById(R.id.img_search);
-//        TextView tvSearchName = convertView.findViewById(R.id.tv_search_name);
-//        TextView tvSearchPrice = convertView.findViewById(R.id.tv_search_price);
+        ImageView imgSearch = convertView.findViewById(R.id.img_search);
+        TextView tvSearchName = convertView.findViewById(R.id.tv_search_name);
+        TextView tvSearchPrice = convertView.findViewById(R.id.tv_search_price);
 
-//        Product product = getItem(position);
+        Product product = getItem(position);
 
-//        Glide.with(imgSearch.getContext()).load(product.getUrlImg()).into(imgSearch);
-//        tvSearchName.setText(product.getProductName());
-//        tvSearchPrice.setText(formatPrice.format(product.getProductPrice()) + " VNĐ");
+        Glide.with(imgSearch.getContext()).load(product.getUrlImg()).into(imgSearch);
+        tvSearchName.setText(product.getProductName());
+        tvSearchPrice.setText(formatPrice.format(product.getProductPrice()) + " VNĐ");
 
         return convertView;
     }
