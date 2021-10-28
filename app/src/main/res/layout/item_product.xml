@@ -28,21 +28,21 @@
             <TextView
                 android:id="@+id/tv_product_name"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="center_horizontal"
                 android:text="T-Shirt"
                 android:textColor="@color/text_color"
-                android:textSize="13sp"/>
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tv_product_price"
                 android:layout_width="match_parent"
-                android:layout_height="18dp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_below="@+id/tv_product_name"
                 android:text="1.234.567 VND"
-                android:textSize="13sp"
+                android:textSize="16sp"
                 android:textColor="@color/red"/>
 
         </RelativeLayout>
