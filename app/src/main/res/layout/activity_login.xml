@@ -24,7 +24,8 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -56,14 +57,18 @@
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_red"
+        android:backgroundTint="@null"
+        app:backgroundTint="@null"
         android:text="Login"
-        android:backgroundTint="@color/btn_color"/>
+        android:textSize="18dp"/>
 
     <TextView
         android:id="@+id/createText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:text="No Account ? Register Here"
         android:textAlignment="center"
         android:textSize="15dp" />

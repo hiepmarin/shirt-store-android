@@ -15,7 +15,6 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp">
 
-
             <RelativeLayout
                 android:id="@+id/top_layout"
                 android:layout_width="match_parent"
@@ -27,7 +26,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_marginBottom="20dp"
-                    android:src="@drawable/profile_image" />
+                    android:src="@drawable/avatar" />
 
                 <TextView
                     android:id="@+id/profile_text"
@@ -35,14 +34,22 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/profile_image"
                     android:text="Profile Information"
-                    android:textColor="@color/text_color"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
                     android:textSize="25sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/profile_text"
+                    android:background="@android:color/darker_gray" />
 
                 <TextView
                     android:id="@+id/profile_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/profile_text"
+                    android:layout_marginTop="10dp"
                     android:text="Name"
                     android:textColor="@color/text_color"
                     android:textSize="20sp" />
@@ -52,6 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/profile_name"
+                    android:layout_marginTop="6dp"
                     android:text="Email"
                     android:textColor="@color/text_color"
                     android:textSize="20sp" />
@@ -61,6 +69,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/profile_email"
+                    android:layout_marginTop="6dp"
                     android:text="Phone"
                     android:textColor="@color/text_color"
                     android:textSize="20sp" />
@@ -70,6 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/profile_phone"
+                    android:layout_marginTop="6dp"
                     android:text="Address"
                     android:textColor="@color/text_color"
                     android:textSize="20sp" />
@@ -79,21 +89,24 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_below="@+id/top_layout">
+                android:layout_height="250dp"
+                android:layout_below="@+id/top_layout"
+                android:gravity="center">
 
                 <Button
                     android:id="@+id/profile_logout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/custom_button_red"
+                    android:backgroundTint="@null"
                     android:text="Log out"
-                    app:backgroundTint="@color/btn_color" />
+                    app:backgroundTint="@null" />
 
             </RelativeLayout>
+
         </RelativeLayout>
 
     </ScrollView>
-
 
 </FrameLayout>
